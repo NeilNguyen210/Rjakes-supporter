@@ -1,0 +1,446 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Receipt</title>
+        <style rel="stylesheet">
+            body {
+                -webkit-print-color-adjust: exact !important;
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box; 
+                width: 670px; 
+                margin: 0 auto; 
+                border: 1px solid black;
+            }
+
+            .text-gray {
+                color: #595959;
+            }
+
+            .text-dark-green {
+                color: #005838;
+            }
+
+            .text-5D6474 {
+                color: #5D6474;
+            }
+
+            .text-595959 {
+                color: #595959;
+            }
+
+            .text-black {
+                color: #000000;
+            }
+
+            .text-12px {
+                font-size: 12px;
+            }
+
+            .text-14px {
+                font-size: 14px;
+            }
+
+            .text-16px {
+                font-size: 16px;
+            }
+
+            .font-weight-400 {
+                font-weight: 400;
+            }
+
+            .font-weight-500 {
+                font-weight: 500;
+            }
+
+            .font-weight-700 {
+                font-weight: 700;
+            }
+
+            .font-bold {
+                font-weight: bold;
+            }
+
+            .text-left {
+                text-align: left;
+            }
+
+            .margin-0 {
+                margin: 0;
+            }
+
+            .bg-EAEED5 {
+                background: #EAEED5;
+            }
+
+            .bg-E1E1E1 {
+                background: #E1E1E1;
+            }
+
+            .bg-F4F4F4 {
+                background: #F4F4F4;
+            }
+
+            .bg-FAFAFA {
+                background: #FAFAFA;
+            }
+
+            header {
+                background: #EEE8D4;
+            }
+
+            header table {
+                height: 100%;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .page-header {
+                height: 80px;
+            }
+            
+            .page-footer {
+                padding: 1rem;
+            }
+            
+            .page-footer {
+                position: relative;
+                bottom: 0;
+                background: #F4F4F4;
+            }
+            
+            .page-header {
+                position: relative;
+                top: 0mm;
+            }
+            
+            @media print {
+                .page-footer {
+                    position: fixed;
+                    width: 100%;
+                }
+                
+                .page-header {
+                    position: fixed;
+                    width: 100%;
+                }
+
+                .page-header-space {
+                    height: 80px;
+                }
+
+                .page-footer-space {
+                    height: 80px;
+                }
+
+                thead {
+                    display: table-header-group;
+                }
+               
+                tfoot {
+                    display: table-footer-group;
+                }
+               
+                button {
+                    display: none;
+                }
+               
+                body {
+                    margin: 0;
+                    width: auto;
+                    border: 0;
+                }
+
+                .print-image {
+                    padding-left: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- BEGIN HEADER -->
+        <header class="page-header">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width: 86%; padding-left: 1rem;">
+                            <div style="font-size: 14px; font-weight: 500;">
+                                RECEIVING RECORD
+                            </div>
+                            <div style="font-size: 24px; font-weight: 600;">
+                                ##recordid##
+                            </div>
+                        </td>
+                        <td rowspan="2" class="print-image"><img width="81" height="47"  alt="logo" src="http://##logourl##" alt="##companyname## logo" /></td>
+                    </tr>
+                </tbody>
+            </table>    
+        </header>
+        <!-- END HEADER -->
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <div class="page-header-space"></div>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="page">
+                            <section class="head" style="padding: 1rem;">
+                                <table>
+                                    <thead>
+                                        <tr class="text-gray text-left text-12px font-weight-400">
+                                            <th>WO#</th>
+                                            <th>Red PO#</th>
+                                            <th>Date</th>
+                                            <th>Coordinator</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                        </tr>
+                                    </head>
+                                    <tbody>
+                                        <tr class="text-left text-14px font-weight-500">
+                                            <td>##wo##</td>
+                                            <td>##po##</td>
+                                            <td>##date##</td>
+                                            <td>##coordinator##</td>
+                                            <td>##ph2##</td>
+                                            <td>##email##</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <section class="client-carrier" style="border-top: 1px solid black; border-bottom: 1px solid black;">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 50%; padding: 1rem; border-right: 1px dashed #858F9D;">
+                                                <h4 class="text-16px text-dark-green font-bold margin-0" style="padding-bottom: .5rem;">Client Contact</h4>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Name</td>
+                                                            <td class="text-12px font-weight-500">##name##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Position</td>
+                                                            <td class="text-12px font-weight-500">##position##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Company</td>
+                                                            <td class="text-12px font-weight-500">##company##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Address</td>
+                                                            <td class="text-12px font-weight-500">##address##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">City</td>
+                                                            <td class="text-12px font-weight-500">##city##</td>
+                                                            <td class="text-gray text-12px font-weight-400">State</td>
+                                                            <td class="text-12px font-weight-500">##state##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Zip Code</td>
+                                                            <td class="text-12px font-weight-500">##zip##</td>
+                                                            <td class="text-gray text-12px font-weight-400">PH</td>
+                                                            <td class="text-12px font-weight-500" style="color: #858F9D;">##ph##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">FAX</td>
+                                                            <td class="text-12px font-weight-500">##fax##</td>
+                                                            <td class="text-gray text-12px font-weight-400">Cell</td>
+                                                            <td class="text-12px font-weight-500">##cell##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Customer</td>
+                                                            <td class="text-12px font-weight-500">##customer##</td>   
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td style="padding-left: 1rem; padding-right: 1rem;">
+                                                <h4 class="text-16px text-dark-green font-bold margin-0" style="padding-bottom: .5rem; margin-top: -1rem;">Carrier Information</h4>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Carrier Name</td>
+                                                            <td class="text-12px font-weight-500">##carrier##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Order ID#</td>
+                                                            <td class="text-12px font-weight-500">##orderid##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Freight Bill#</td>
+                                                            <td class="text-12px font-weight-500">##bol##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Cartons</td>
+                                                            <td class="text-12px font-weight-500">##cartons##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Weight</td>
+                                                            <td class="text-12px font-weight-500">##wt##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Manufacturer</td>
+                                                            <td class="text-12px font-weight-500">##mfr##</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-gray text-12px font-weight-400">Manuf. Order ID#</td>
+                                                            <td class="text-12px font-weight-500">##mfrid##</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                    
+                            </section>
+
+                            <section class="storage">
+                                <h4 class="text-16px text-dark-green margin-0 font-bold" style="padding: 1rem;">Storage</h4>
+
+                                <table>
+                                    <thead>
+                                        <tr class="bg-EAEED5 text-dark-green text-12px font-weight-500 text-left">
+                                            <th style="padding-left: 1rem; padding-top: .75rem; padding-right: 1rem; padding-bottom: .75rem;">Warehouse Locations</th>
+                                            <th>Start date</th>
+                                            <th>Cubic Feet</th>
+                                            <th>Monthly Cost</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-5D6474 text-12px font-weight-400 text-left">
+                                            <td style="padding-left: 1rem; padding-top: .75rem; padding-right: 1rem; padding-bottom: .75rem;">##locations##</td>
+                                            <td>##start##</td>
+                                            <td>##cube##</td>
+                                            <td>##cost##</td>
+                                        </tr>
+                                </table>
+                            </section>
+
+                            <section class="received">
+                                <h4 class="text-16px text-dark-green font-bold margin-0" style="padding: 1rem;">Received</h4>
+
+                                <table>
+                                    <thead>
+                                        <tr class="bg-EAEED5 text-dark-green text-12px font-weight-500 text-left">
+                                            <th style="padding-left: 1rem; padding-top: .75rem; padding-right: 1rem; padding-bottom: .75rem;">Previous</th>
+                                            <th>Current</th>
+                                            <th>Part #</th>
+                                            <th>Description/Comments</th>
+                                            <th>Sidemark</th>
+                                            <th>Damaged</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-5D6474 text-12px font-weight-400 text-left">
+                                            <td style="padding-left: 1rem; padding-top: .75rem; padding-right: 1rem; padding-bottom: .75rem;">##previous##</td>
+                                            <td>##current##</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <section class="totals" style="padding: 1rem; border-top: 1px solid #858F9D; border-bottom: 1px solid #858F9D;">
+                                <table>
+                                    <tbody>
+                                        <tr class="text-12px text-595959">
+                                            <td style="border-right: 1px solid #858F9D; width: 15%;">
+                                                <div>Total pieces</div>
+                                                <div class="text-14px text-black">####</div>
+                                            </td>
+                                            <td style="padding-left: 1.25rem;">
+                                                <div>Previous</div>
+                                                <div class="text-14px text-black">##previous##</div>
+                                            </td>
+                                            <td>
+                                                <div>Current</div>
+                                                <div class="text-14px text-black">##current##</div>
+                                            </td>
+                                            <td>
+                                                <div>Damages</div>
+                                                <div class="text-14px text-black">##damages##</div>
+                                            </td>
+                                            <td>
+                                                <div>Delivered</div>
+                                                <div class="text-14px text-black">##delivered##</div>
+                                            </td>
+                                            <td>
+                                                <div>Available</div>
+                                                <div class="text-14px text-black">##avl##</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <section class="comments">
+                                <h4 class="text-16px text-dark-green font-bold margin-0" style="padding: 1rem;">Comments</h4>
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding-left: 1rem; padding-right: 1rem; padding-bottom: 1rem;">
+                                                <div class="text-12px text-595959">##comments##</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                    <!--place holder for the fixed-position footer-->
+                    <div class="page-footer-space"></div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <footer class="page-footer">
+            <h4 class="margin-0 text-16px font-weight-700" style="padding-bottom: 1rem;">Service West, Inc.</h4>
+
+            <table>
+                <tbody class="text-595959 text-12px">
+                    <tr>
+                        <td>Service West, Inc. 2054 Burroughs Ave San Leandro CA 94577</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>510-746-3700 main</td>
+                        <td style="color: #000000;">We' re all about dealer success</td>
+                    </tr>
+                    <tr>
+                        <td>fax 510-343-2801</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>www.servicewest.com</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </footer>
+    </body>
+</html>
